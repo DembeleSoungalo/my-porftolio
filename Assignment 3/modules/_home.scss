@@ -1,0 +1,59 @@
+@import '/modules/vars'
+
+main{
+
+    .showcase{
+        padding:20%;
+        margin: auto;
+        background: linear-gradient(45deg,#3d3838, #990d0d);
+        h1{
+        font-size: x-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: white;
+        }
+        p{
+        margin-right: 100px;
+        font-size: x-large;
+        align-content: center;
+        color: white;
+        }
+    }
+}
+header{
+    display: flex;
+    /* background: linear-gradient(to left,#3d3838, #990d0d,#990d); */
+    background: var(--header-bg-color);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ece9e9;
+    flex-wrap: wrap;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    box-shadow: 2px 3px px rgb(175, 170, 170);
+    transform-origin: all;
+    .menu{ 
+        text-align:end; 
+    }
+    .navbar-brand{
+        flex-basis: 50%;
+    
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+    }
+    a{
+        display: inline-block;
+
+        &:hover{
+            /* background-color: var(--aimation-color); */
+            border-bottom: 3px solid $animationColor;
+            transition: .5s;
+        }
+        
+      
+      }
+}

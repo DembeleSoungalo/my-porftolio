@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+:root{
+    --first-color:#990d0d;
+    --second-color:#161515;
+    /* --bg-btn-color:#990d; */
+    --bg-btn-color:#dada2c73;
+    --bg-section-color:#e9e6e6;
+    --grad-color-1:vx#3d3838;
+    --grad-color-2:#990d0d;
+    --aimation-color:#caca15f6;
+    --header-bg-color:linear-gradient(to left,#3d3838, #990d0d,#990d);
+}
+
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    /* background: linear-gradient(to left,#3d3838, #990d0d,#990d); */
+    background: var(--header-bg-color);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ece9e9;
+    flex-wrap: wrap;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    box-shadow: 2px 3px px rgb(175, 170, 170);
+    transform-origin: all;
+}
+header .logo, header .menu{
+    flex-basis: 50%;
+}
+header .logo{
+    display: flex;
+
+}
+header .logo a{
+  display: inline-block;
+  
+
+}
+
+header .menu{
+    text-align: end;
+}
+header .menu ul{
+    list-style: none;
+    padding: 0px;
+}
+header .menu ul li{
+    display: inline-block;
+    padding: 5px;
+}
+header .menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+/* Styling for the project section */
+#projet {
+  text-align: center; /* Center align text within the section */
+  padding: 20px; /* Add padding around the section content */
+}
+
+#proje-img {
+  margin-bottom: 20px; /* Add margin below the image */
+}
+
+#proje-img img {
+  max-width: 100%; /* Ensure image scales responsively */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the article within the project section */
+#article {
+  margin-bottom: 20px; /* Add margin below the article */
+}
+
+/* Styling for the future projects section */
+.Project-item {
+  text-align: left; /* Align text to the left */
+}
+
+/* Styling for the list of future projects */
+#future-projet ul {
+  list-style: none; /* Remove default list markers */
+  padding: 0; /* Reset padding for the list */
+}
+
+#future-projet li {
+  margin-bottom: 20px; /* Add margin below each list item */
+}
+
+#future-projet li h2 {
+  margin-bottom: 10px; /* Add margin below the heading in each list item */
+}
+
+#future-projet li img {
+  max-width: 100%; /* Ensure images scale responsively */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Make images block-level elements */
+  margin: 0 auto; /* Center align images */
+}
+
+
+/*Responsive part*/
+@media screen and (min-width:769) and (max-width:1024px){
+  .profile-pic{
+        width: 50px;
+        height:50x;
+        border-radius: 50px;
+      }
+}
+@media screen and (min-width:314) and (max-width:768px){
+    header .logo, header .menu{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+
+
+    }
+    .h1-w{
+        font-size:2.5rem;
+        margin:1rem 0;
+        line-height: 1.1;
+    
+    }
+    .h1-m{
+        font-size:1.5rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        color: #fffffff1;
+    }
+    a{
+        text-decoration: none;
+    }
+    .btn{
+        display: inline-block;
+        color: #fff;
+        background: #b99717;
+        padding: 1rem 3rem;
+        margin: 3rem 2rem;
+        border: none;
+        border-radius: 02;
+        transition:all;
+        align-items: center;
+        align-content: center;
+    }
+    #showcase{
+        padding:20%;
+        margin: auto;
+        background: linear-gradient(45deg,#3d3838, #990d0d);
+    }
+    #showcase h1{
+        font-size: x-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    #showcase h1 p{
+        margin-right: 100px;
+        font-size: x-large;
+        align-content: center;
+    }
+    .about, .object, .projects{
+        max-width:max-content;
+        padding: 50px 25px;
+        margin: 30px;
+        border-radius: 25px;
+        border: 1px solid #f3f0f0;
+        background:var(--bg-section-color) ;
+        flex-wrap: nowrap;
+    }
+   
+}
+
+
+/*Animation */
+header .menu ul li a:hover{
+    /* background-color: var(--aimation-color); */
+    border-bottom: 3px solid var(--aimation-color);
+    transition: .5s;
+}
+/*Animation End*/
+/* Button*/
+/* .btn{
+    display: inline-block;
+    color: #fff;
+    background-color: var(--second-color);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 02px;
+    transition: all;
+}
+.btn:hover{
+    background: #ec1919;
+    transition: 0.5s;
+} */
+/*End OF the Header*/
+
+/*Start of the main*/
+/* showcase*/
+.h1-w{
+    font-size:4rem;
+    margin:1.5rem 0;
+    line-height: 1.1;
+
+}
+.h1-m{
+    font-size:2.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #fffffff1;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: #b99717;
+    padding: 1rem 3rem;
+    margin: 3rem 2rem;
+    border: none;
+    border-radius: 02;
+    transition:all;
+    align-items: center;
+    align-content: center;
+}
+#showcase{
+    padding:20%;
+    margin: auto;
+    background: linear-gradient(45deg,#3d3838, #990d0d);
+}
+#showcase h1{
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#showcase h1 p{
+    margin-right: 100px;
+    font-size: x-large;
+    align-content: center;
+}
+.show-content a:hover{
+  background-color: #caca15f6;
+  font-weight: bold;
+}
+.container{
+    
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content:space-around;
+    align-items: center;
+    align-content: baseline;
+    overflow: hidden;
+
+}
+.container ul li{
+  display: inline-block;
+  align-content: center;
+}
+.container h1{
+    text-align: center;
+}
+/* the whole design */
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-color: #a51717;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.intro h1{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.intro p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.intro button{
+    padding: 1rem 2rem;
+    background-color: #990d0d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.intro button:hover{
+    background-color: #770a0a;
+}
+/*End of the showcase*/
+/*About*/
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self:auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9e6e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.about p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.about button{
+    padding: 1rem 2rem;
+    background-color: #990d0d;
+    color: #fff
+}
+/* Skill start*/
+.progress-container {
+    width: 100px; /* Adjust the width as needed */
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #990d; /* Green color, adjust as needed */
+    transition: width 0.5s ease; /* Smooth transition */
+  }
+  
+  #progressInput {
+    display: none; /* Hide the input element */
+  }
+/* Skill End*/
+
+.about, .object, .projects{
+    max-width: fit-content;
+    padding: 25px 50px;
+    margin: 60px 30px;
+    border-radius: 25px;
+    border: 1px solid #f3f0f0;
+    background:#e9e6e6 ;
+}
+.about {
+    text-align: center;
+    padding: 2rem;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+  
+    img {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .object {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    .object-item {
+      width: 30%;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid var(--border-color);
+      text-align: center;
+  
+      img {
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
+  
+/*End of the main*/
+/*The Footer start*/
+/* Basic Footer Styling */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff;            /* White text */
+    padding: 40px 0;        /* Top/bottom padding, no left/right */
+    text-align: center;      /* Center align text */
+  }
+  
+  .container {
+    max-width: 960px; /* Limit container width for better readability */
+    margin: 0 auto;   /* Center the container */
+  }
+  
+  /* Footer Content Area */
+  .footer-content {
+    display: flex;
+    justify-content: space-around; /* Evenly space content */
+    align-items: flex-start;      /* Align items to the top */
+    flex-wrap: wrap;              /* Wrap content on smaller screens */
+    margin-bottom: 30px;          /* Space between content and bottom */
+  }
+  
+  .contact-info, 
+  .map {
+    flex: 1 0 300px; /* Each section takes equal width, min 300px */
+    margin-bottom: 20px; /* Space between sections */
+    order: 2;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  /* Map Styling */
+  .map iframe {
+    width: 100%; /* Make map responsive */
+  }
+  
+  /* Footer Bottom (Social & Copyright) */
+  .footer-bottom {
+    border-top: 1px solid #555; /* Thin gray line above */
+    padding-top: 20px;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+  
+  }
+  
+  .footer-bottom .social a {
+    margin: 0 15px; /* Space between icons */
+  }
+  
+  .footer-bottom p,
+  .footer-bottom a {
+    color: #bbb; /* Lighter gray for copyright and Home link */
+    text-decoration: none;
+  }
+  
+  
+
+  
+
+/* footer{
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #f34f4f;
+}
+footer .social{
+    background-color: aqua;
+    width: 500px;
+
+}
+footer iframe{
+    width: 500px;height: 100px;
+} */
+/*Fomulaire Style Start*/
+/* ... your existing CSS ... */
+
+/* Contact Form Styling */
+
+.profile-pic{
+  width: 15%;
+  height:50%;
+  border-radius: 50px;
+}
+/* .container img{
+  display: none;
+} */
+#contact {
+    text-align: left; /* Align form elements to the left */
+  }
+  
+  #contact form {
+    
+    width: 100%; /* Make the form responsive */
+    max-width: 400px; /* Limit the form width for better readability */
+  }
+  
+  #contact fieldset {
+    border: none; /* Remove default fieldset border */
+    padding: 0;
+  }
+  
+  #contact label {
+    display: block; /* Place labels on their own line */
+    margin-bottom: 5px;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin-bottom: 10px;
+    display: inline;
+  }
+  
+  #contact textarea {
+    min-height: 120px; /* Set a minimum height for the textarea */
+  }
+  
+  #contact button[type="submit"] {
+    background-color: var(--bg-btn-color); /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  #contact button[type="submit"]:hover {
+    background-color: #caca15f6; 
+  }
+ input:focus{
+    transition: all .5s ease-in;
+    /* background-color: var(--bg-btn-color); */
+ }
+ textarea:hover{
+  transition: all .5s ease-in;
+    /* background-color: var(--bg-btn-color); */
+ }
+  
+
+/*Fomulaire Style End*/
